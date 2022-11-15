@@ -1,4 +1,5 @@
-This is a mirror of http://www.vim.org/scripts/script.php?script_id=4082
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=4082 with my
+minor improvements
 
 # Introduction
 Cscove(new name for this plugin, since cscope.vim is used too widely.) is a
