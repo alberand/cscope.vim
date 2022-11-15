@@ -277,7 +277,9 @@ function! cscope#find(action, word)
   try
     exe ':lcs f '.a:action.' '.a:word
     if g:cscope_open_location == 1
-      lw
+      if len(getloclist(0)) > 1
+        lw
+      endif
     endif
   catch
     echohl WarningMsg | echo 'Can not find '.a:word.' with querytype as '.a:action.'.' | echohl None
